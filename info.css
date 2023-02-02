@@ -1,42 +1,4 @@
-/* CSS Mobile Reset */
-html, body
-{
- margin: 0;
- padding: 0;
- border: 0;
-}
 
-body
-{
- font-family:Arial,  sans-serif;
- line-height:1.5;
- font-size:16px;
- background: #fff;
- padding:5px;
- color: #000;
- word-wrap: break-word;
- -webkit-text-size-adjust: none;
-}
-
-h1, h2, h3, h4, h5, h6{ font-weight: normal; }
-
-p img { float: left; margin: 0 10px 5px 0; padding: 0; }
-
-img { border: 0; max-width: 100%; }
-
-table { width:auto; border-collapse: collapse;border-spacing: 0; }
-
-body {
-    font-family: inherit;
-    font-size: 1rem;
-    line-height: inherit;
-    color: inherit;
-    background-color: #fff;
-    padding-top: 0;
-    counter-reset: captions;
-    overflow-x: hidden;
-    margin-top: 70px;
-}
 
 #top-img img {
     width: 100%;
@@ -54,6 +16,7 @@ body {
     text-align: center;
     color: white;
     font-weight: bold;
+
 }
 
 #top-intro h4 {
@@ -82,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    height: 5rem;
 }
 
 #menu-bar-main div {
@@ -134,7 +97,7 @@ body {
 
 #main-container-right {
     font-family: inherit;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: inherit;
     color: inherit;
     display: flex;
@@ -182,7 +145,7 @@ body {
 
 .portrait-title h3 {
     font-size: 1rem;
-    font-weight: 300;
+
     color: rgba(0, 0, 0, .54);
     margin: 0 0 10px;
 }
