@@ -1,1 +1,553 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex's Home Page</title>
+    <link rel="stylesheet" href="info.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="info.js"></script>
+</head>
+<body>
+<div id="menu-bar" class="container-fluid">
+    <div class="container" id="menu-bar-main">
+        <div class="col-2" onclick="scrollToInfo('scroll_toInfo')">About me</div>
+        <div class="col-2" onclick="scrollToInfo('social-ac')">Skills</div>
+        <div class="col-2" onclick="scrollToInfo('main-container-cv')">Resume</div>
+        <div class="col-2" onclick="scrollToInfo('main-container-interest')">Interest</div>
+    </div>
+</div>
+
+<div id="mobile-bar" class="container-fluid">
+    <div id="mobile-bar-container" class="mobile-beauty">
+        <div onclick="scrollToInfo('scroll_toInfo')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill"
+                 viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+        </div>
+        <div onclick="scrollToInfo('main-container-skills')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                 class="bi bi-file-code-fill" viewBox="0 0 16 16">
+                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/>
+            </svg>
+        </div>
+        <div onclick="scrollToInfo('top-img')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                 class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+            </svg>
+        </div>
+        <div onclick="scrollToInfo('main-container-cv')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                 class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z"/>
+            </svg>
+        </div>
+
+        <div onclick="scrollToInfo('main-container-interest')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                 class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div id="top-img">
+    <img src="img/bady-abbas-c4XoMGxfsVU-unsplash.jpg" alt="">
+    <div id="top-intro">
+        <h1>Hi, I am Alex!</h1>
+        <h4>HK | PolyU | Computing | Developer </h4>
+        <div id="top-arrow-down" onclick="scrollToInfo('scroll_toInfo')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                      d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd"
+                      d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+    </div>
+    <div id="scroll_toInfo"></div>
+</div>
+<div id="main-container" class="container-fluid">
+    <div id="main-container-body">
+        <div class="col-12 col-lg-4" id="main-container-left">
+            <div class="circular--landscape">
+                <img src="img/avatar.png" alt="">
+            </div>
+            <div class="portrait-title">
+                <h2>Lam Wai Kit Alex</h2>
+                <h3>Bsc Computing Student</h3>
+            </div>
+            <div id="polyU-info">
+                <div>
+                    <img src="img/PolyuLogo.jpg" alt="">
+                </div>
+                <div id="polyU-text">
+                    <a href="https://www.polyu.edu.hk/">@PolyU</a>
+                </div>
+            </div>
+            <div id="social-ac">
+                <div>
+                    <a href="https://github.com/BoLam0305">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-github"
+                             viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/alex-lam-12508923a/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/replacethistwitterhandle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:alexlamwaikit0305@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="main-container-right" class="col-12 col-lg-8">
+            <div id="self-intro-container" class="container-fluid">
+                <h1>Hi!</h1>
+                <p>I’m Alex, a computer science student at <a href="https://www.polyu.edu.hk/">PolyU</a> <a
+                        href="https://www.polyu.edu.hk/comp/">Department of Computing</a> in the class of 2023. I’m a
+                    hard-working, passionate person who
+                    believes in the importance of education and accessibility to technological advancements.</p>
+                <p>
+                    I love learning how computers work, how they interact with the human world, and what makes them
+                    tick. I
+                    am excited to learn more about this field and continue contributing to the world around me through
+                    technology. The most important thing for me is working well with others, especially when it comes to
+                    creating
+                    something new or solving problems with my classmates.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-container-skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div id="main-container-skills-body" class="row">
+            <div class="skills-combination col-sm">
+                <div class="skill-title">Programming Language</div>
+                <div>
+                    <div class="skills-present">
+                        <div>JAVA</div>
+                        <div>60%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="java-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>Python</div>
+                        <div>60%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="python-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>C/C++</div>
+                        <div>50%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="cpp-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>C#</div>
+                        <div>50%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="cs-bar" class="myBar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-combination col-sm">
+                <div class="skill-title">Web Development</div>
+                <div>
+                    <div class="skills-present">
+                        <div>HTML5</div>
+                        <div>80%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="html-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>CSS3</div>
+                        <div>70%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="css-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>Javascript</div>
+                        <div>65%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="js-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>JQuery</div>
+                        <div>60%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="jq-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>Boostrap</div>
+                        <div>55%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="bs-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>PHP</div>
+                        <div>55%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="php-bar" class="myBar"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skills-combination col-sm">
+                <div class="skill-title">Framework</div>
+                <div>
+                    <div class="skills-present">
+                        <div>Spring Boot</div>
+                        <div>60%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="spring-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>Django</div>
+                        <div>55%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="django-bar" class="myBar"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills-present">
+                        <div>React Js</div>
+                        <div>40%</div>
+                    </div>
+                    <div class="myProgress">
+                        <div id="react-bar" class="myBar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-container-cv" class="container-fluid">
+    <div class="container">
+        <h2>Resume</h2>
+        <div>
+            <div id="cv-heading" class="container-fluid">
+                <h5>Lam, Wai Kit (Alex)</h5>
+                <div>
+                    <span><b>Email:</b> alexlamwaikit0305@gmail.com <b>| </b></span>
+                    <span id="cv-tel"><b>Tel:</b> +852 5218xxxx</span>
+                </div>
+            </div>
+            <div id="cv-edu" class="cv-main">
+                <div>
+                    <div onclick="showCV('edu')" class="cv-drop-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             id="edu-right"
+                             class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" id="edu-down"
+                             class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <h5>EDUCATION BACKGROUND</h5>
+                    </div>
+                    <div id="edu-container" class="cv-details-container">
+                        <div class="col cv-div-1">
+                            <div><b>The Hong Kong Polytechnic University (PolyU)</b></div>
+                            <div>09/2021 – 06/2023</div>
+                        </div>
+                        <p><i>Bachelor of Science (HONS) in Computing</i></p>
+                        <p><b>GPA:</b>3.1</p>
+                        <div class="col cv-div-1">
+                            <div><b>Hong Kong Institute of Vocational Education (IVE)</b></div>
+                            <div>09/2019 – 06/2021</div>
+                        </div>
+                        <p><i>Higher Diploma in Software Engineering</i></p>
+                        <p><b>Graduated </b>(distinction)</p>
+                    </div>
+                </div>
+                <div>
+                    <div onclick="showCV('work')" class="cv-drop-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             id="work-right"
+                             class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             id="work-down"
+                             class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                        <h5>WORK EXPERIENCE</h5>
+                    </div>
+                    <div id="work-container" class="cv-details-container">
+                        <div>
+                            <div class="col cv-div-1" class="cv-details-container">
+                                <div><b>IT, Intern</b></div>
+                                <div>06/2022 – 08/2021</div>
+                            </div>
+                            <div><i>Metrojet Limited</i></div>
+                            <ul>
+                                <li>Program Language: C#</li>
+                                <li>Design, implementation, testing, and maintenance of an end-to-end system</li>
+                                <li>Built in-house IT applications by using Microsoft Power Platform to improve office
+                                    efficiency and effectiveness
+                                </li>
+                                <li>Conferring with users for analyzing their needs and requirements</li>
+                                <li>Propose an automated solution and resolve clients' needs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="col cv-div-1">
+                                <div><b>Back-end Developer</b></div>
+                                <div>07/2021 – 09/2021</div>
+                            </div>
+                            <div><i>EY Mtel Solution Limited</i></div>
+                            <ul>
+                                <li>Program Language: Java</li>
+                                <li>Implement web-based/API-based applications by Java, Spring Boot</li>
+                                <li>Developed an admin portal and reward system for an E-payment application</li>
+                                <li>The system is developed under Modal-View-Controller (MVC) Architecture</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="col cv-div-1">
+                                <div><b>Programmer, Intern</b></div>
+                                <div>07/2020 – 05/2021</div>
+                            </div>
+                            <div><i>SxL Technology (HK) Limited</i></div>
+                            <ul>
+                                <li>Program Language: Java, Python</li>
+                                <li>Implement web-based/API-based applications by Java, Spring Boot</li>
+                                <li>Build an AI experiment and online learning tools for the secondary school students
+                                </li>
+                                <li>Developed UI with user-friendly design by React Js</li>
+                                <li>Developed a custom AI model training function for object detection by using Python
+                                </li>
+                                <li>Develop IOT platform to interact with Raspberry Pi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div onclick="showCV('skill')" class="cv-drop-down">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                 id="skill-right"
+                                 class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                 id="skill-down"
+                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                            <h5>TECHNICAL SKILLS</h5>
+                        </div>
+                        <div id="skill-container">
+                            <div class="col cv-details-container">
+                                <div><b>Programming Skills:</b> Python, Java , C/C++, C#, PHP, JavaScript</div>
+                                <div><b>Framework:</b> Spring Boot, Django, React Js</div>
+                                <div><b>Database:</b> MySql, Oracle</div>
+                                <div><b>Others:</b> HTML, CSS, JQuery, Unity, RESTful API</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-container-interest">
+    <div class="container" id="main-container-interest-body">
+        <div class="container">
+            <h2>Interest</h2>
+        </div>
+        <div class="container">
+            <h5>I
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                     class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+                Traveling!
+            </h5>
+
+            <p>Travel gives us our greatest stories, our most cherished memories and countless irreplaceable learnings
+                that we can choose to pay forward to others. It teaches us about ourselves and each other, it broadens
+                our horizons and, just like a reset button, it forces us to refocus on what really matters.</p>
+
+        </div>
+        <div id="interest-img-container" class="row">
+            <div class="col-sm img-con" id="tw-img">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/TW1.jpeg">
+                    <img src="img/TW2.jpeg" alt="" class="resize-img">
+                    <p id="tw-text">Taiwan</p>
+                </picture>
+            </div>
+            <div class="col-sm img-con" id="jp-img">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/JP1.jpeg">
+                    <img src="img/JP2.jpeg" alt="" class="resize-img">
+                    <p id="jp-text">Japan</p>
+                </picture>
+            </div>
+            <div class="col-sm img-con" id="au-img">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/AU1.jpg">
+                    <img src="img/Au2.jpg" alt="" class="resize-img">
+                    <p id="au-text">Australia & New Zealand</p>
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div class="container">
+                <table class="table table-striped table-hover ">
+                    <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Attractions</th>
+                        <th>Food and Beverage</th>
+                        <th>Flight Hrs</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Taiwan</td>
+                        <td><span class="fa fa-star checked start-rating"></span>
+                            <span class="fa fa-star checked start-rating"></span>
+                            <span class="fa fa-star checked start-rating"></span>
+                            <span class="fa fa-star checked start-rating"></span>
+                            <span class="fa fa-star start-rating"></span>
+                            <span class="mark-rating">4</span></td>
+
+                        <div class="start-rating">
+                            <td><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="mark-rating">4</span>
+                            </td>
+                        </div>
+                        <td>1.5hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <div class="start-rating">
+                            <td><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="mark-rating">4</span></td>
+                        </div>
+                        <div class="start-rating">
+                            <td><span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="mark-rating">3</span></td>
+                        </div>
+
+                        <td>3hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Australia</td>
+                        <td class="start-rating"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="mark-rating">3</span></td>
+                        <td class="start-rating"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="mark-rating">3</span></td>
+                        <td>12hrs</td>
+                    </tr>
+                    <tr>
+                        <td>New Zealand</td>
+                        <td class="start-rating"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="mark-rating">5</span></td>
+                        <td class="start-rating"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="mark-rating">3</span></td>
+                        <td>13hrs</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-container-end" class="container-fluid">
+    <img src="img/avatra2.png" alt="">
+</div>
+</body>
+</html>
