@@ -1,8 +1,10 @@
 
-
+html, body {
+    overflow-x: hidden;
+}
 
 #top-img img {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
     filter: brightness(75%)
@@ -22,6 +24,7 @@
 
 #top-intro h4 {
     white-space: nowrap;
+    font-size: 2.5vh;
 }
 
 #scroll_toInfo {
@@ -36,7 +39,9 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 5vh;
     z-index: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 11%);
@@ -113,6 +118,7 @@
 #main-container-right p {
     margin-top: 0;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 
@@ -303,12 +309,10 @@
 
 .cv-details-container {
     padding-left: 15px;
+    font-size: 2vh;
 
 }
 
-#cv-edu {
-
-}
 
 .cv-main h5 {
     border-bottom: 3px solid;
@@ -318,6 +322,10 @@
 .cv-div-1 {
     display: flex;
     justify-content: space-between;
+}
+
+.cv-div-1 ul {
+    text-align: justify;
 }
 
 #cv-tel {
@@ -337,6 +345,7 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 9px;
     cursor: pointer;
+
 }
 
 #interest-img-container img:hover {
@@ -433,4 +442,10 @@ tr, th, td {
 #mobile-bar-container svg {
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-device-width: 481px) {
+     .img-con img{
+         width: 90vw;
+     }
 }
